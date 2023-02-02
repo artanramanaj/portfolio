@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.primary-btn {
+@apply bg-primary-green text-white rounded px-4 py-2
+}
+.primary-btn:hover{
+    @apply bg-primary-grey rounded px-4 py-2
+}
