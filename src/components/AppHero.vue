@@ -5,7 +5,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu nullam felis odio leo in nisl in facilisis. Cras eget diam enim curabitur libero, facilisi sollicitudin purus neque. </p>
       <button class="primary-btn ">Contact Me</button>
     </div>
-    <img src="/img/background.svg" alt="" >
+    <img src="/img/mainbackground.png" alt="background" >
   </div>
 </template>
 
