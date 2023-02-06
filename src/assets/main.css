@@ -21,6 +21,11 @@
   font-weight: 500;
   line-height: 36px;
 }
+#app h4 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 36px;
+}
 #app p {
   font-size: 16px;
   font-weight: 400;

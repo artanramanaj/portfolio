@@ -3,19 +3,19 @@
         <img src="/img/AR.svg" alt="">
         <ul class="  text-white hidden md:flex">
             <li class="py-2 px-4">
-                <a href="#">Home</a>
+                <router-link to="/">Home</router-link>
             </li>
             <li class="py-2 px-4">
-                <a href="#">Portfolio</a>
+                <router-link to="/portfolio">Portfolio</router-link>
             </li>
             <li class="py-2 px-4">
-                <a href="#">Services  </a>
+                <router-link to="/services">Services  </router-link>
             </li>
             <li class="py-2 px-4">
-                <a href="#">Contact</a>
+                <router-link to="/contact">Contact</router-link>
             </li>
             <li class="bg-primary-green py-2 px-4 rounded-lg cursor-pointer hover:bg-primary-grey ">
-                <a href="#">Hire Me </a>
+                Hire Me 
             </li>
         </ul>
         <img src="/img/menu.png" alt="" class="flex md:hidden">
