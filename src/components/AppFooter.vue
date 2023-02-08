@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 text-white py-20">
+  <div class="container grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 text-white px-2 py-20">
     <div class="flex flex-col gap-4">
       <h4>AR</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

@@ -1,5 +1,5 @@
 <template>
-<div class="bg-[url('/img/serviceBackground.svg')] bg-blend-darken bg-cover bg-no-repeat rounded w-full min-h-[50vh]">
+    <div class="bg-[url('/img/serviceBackground.svg')] bg-blend-darken bg-cover bg-no-repeat rounded w-full min-h-[50vh]">
   <div class=" min-h-[50vh] flex flex-col justify-center items-center gap-4 text-white px-2 container">
     <h1>
       Hi I’m Gery Simon I am a web
@@ -19,6 +19,7 @@
 
 <script>
 export default {
-  name: "HeroServices",
-};
+name:"heroAbout"
+}
 </script>
+

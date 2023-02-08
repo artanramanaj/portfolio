@@ -1,6 +1,6 @@
 <template>
   <!-- <carousel :items-to-show="3" :wrap-around="true" :breakpoints="breakpoints" class="text-white"> -->
-  <carousel :settings="settings" :autoplay="2000" :breakpoints="breakpoints" :wrap-around="true" class="text-white">
+  <carousel :settings="settings" :autoplay="2000" :breakpoints="breakpoints" :wrap-around="true" class="text-white container px-2 py-20">
     <slide v-for="(slide,index) in testimonial" :key="index">
         <div class="bg-primary-green flex flex-col items-center justify-start  min-h-[400px] p-4 break-words rounded-md">
             <p>{{slide.description}}</p>

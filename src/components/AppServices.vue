@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col justify-center items-center gap-4 text-white py-20">
+  <div class="container flex flex-col justify-center items-center gap-4 text-white px-2 py-20">
     <p class="text-primary-green">Services</p>
     <h1>Skillset</h1>
-    <div class="w-full flex flex-col md:flex-row flex-wrap gap-4 justify-center">
+    <div class="w-full flex flex-col md:flex-row flex-wrap gap-4 justify-between md:gap-8">
       <div
         class="
           bg-primary-black
