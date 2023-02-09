@@ -1,9 +1,16 @@
 <template>
-    <h1>Portfolio</h1>
+  <HeroPortfolio />
+  <ContentPortfolio />
 </template>
 
 <script>
+import HeroPortfolio from "../components/Portfolio/HeroPortfolio.vue";
+import ContentPortfolio from "../components/Portfolio/ContentPortfolio.vue";
 export default {
-    name:"portfolio"
-}
+  name: "portfolio",
+  components: {
+    HeroPortfolio,
+    ContentPortfolio,
+  },
+};
 </script>

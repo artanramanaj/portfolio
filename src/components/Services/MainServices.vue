@@ -1,36 +1,9 @@
 <template>
   <div
-    class="
-      w-full
-      flex flex-col
-      md:flex-row
-      flex-wrap
-      gap-4
-      justify-between
-      my-4
-      px-2
-      py-20
-      container
-      md:gap-8
-    "
+    class="w-full flex flex-col md:flex-row flex-wrap gap-4 justify-between my-4 px-2 py-20 container md:gap-8"
   >
     <div
-      class="
-        bg-primary-black
-        flex flex-col
-        gap-4
-        justify-center
-        items-center
-        px-4
-        py-8
-        rounded-md
-        w-full
-        md:w-[23%]
-        min-h-[400px]
-        cursor-pointer
-        text-white
-        hover:bg-primary-green
-      "
+      class="bg-primary-black flex flex-col gap-4 justify-center items-center px-4 py-8 rounded-md w-full md:w-[23%] min-h-[400px] cursor-pointer text-white hover:bg-primary-green"
       v-for="(el, index) in services.allServices"
       :key="index"
     >
