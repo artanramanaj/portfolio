@@ -17,7 +17,7 @@
       </p>
       <button class="primary-btn">Contact Me</button>
     </div>
-    <img src="/img/mainbackground.png" alt="background" />
+    <img src="/img/newmainbackground.svg" alt="background" />
   </div>
 </template>
 

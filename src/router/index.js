@@ -7,7 +7,6 @@ const router = createRouter({
       path: "/",
       name: "home",
       component: () => import("../views/HomeViews.vue"),
-
     },
     {
       path: "/about",
@@ -23,13 +22,16 @@ const router = createRouter({
       path: "/services",
       name: "services",
       component: () => import("../views/ServicesViews.vue"),
-   
     },
     {
       path: "/contact",
       name: "contact",
       component: () => import("../views/ContactViews.vue"),
-   
+    },
+    {
+      path: "/mobile",
+      name: "mobile",
+      component: () => import("../components/MobileMenu.vue"),
     },
   ],
 });

@@ -1,7 +1,10 @@
 <template>
-  <div class="container flex justify-between items-center min-h-[100px] px-2">
-    <img src="/img/AR.svg" alt="" />
-    <ul class="text-white hidden md:flex">
+  <div
+    class="fixed top-0 min-w-full min-h-screen bg-black z-[1111] px-4 py-2 md:hidden"
+  >
+    <img src="/img/cancel.png" alt="cancel" class="absolute mt-2 right-5" />
+
+    <ul class="text-white flex flex-col">
       <li class="py-2 px-4">
         <router-link to="/">Home</router-link>
       </li>
@@ -23,28 +26,12 @@
         Hire Me
       </li>
     </ul>
-    <img
-      src="/img/menu.png"
-      alt=""
-      class="flex md:hidden"
-      @click="this.showMenu = !this.showMenu"
-    />
   </div>
-
-  <MobileMenu v-if="showMenu" :testing="showMenu" />
 </template>
 
 <script>
-import MobileMenu from "./MobileMenu.vue";
 export default {
-  name: "nav",
-  data() {
-    return {
-      showMenu: false,
-    };
-  },
-  components: {
-    MobileMenu,
-  },
+  name: "mobileMenu",
+  props: ["testing"],
 };
 </script>

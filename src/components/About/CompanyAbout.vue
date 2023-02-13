@@ -1,47 +1,74 @@
 <template>
-  <div class="flex">
-    <div
-      class="
-        text-white
-        flex flex-col
-        gap-2
-        mt-4
-        p-8
-        rounded-md
-        border-2 border-primary-green
-        bg-[#101010]
-        w-1/2
-      "
-      v-for="(el, index) in companyData"
-      :key="index"
-      @click="el.tab"
-    >
-      <h3>{{ el.name }}</h3>
-      <h4>{{ el.position }}</h4>
-      <p>{{ el.time }}</p>
-      <div class="flex gap-4">
-        <p>{{ el.from }}</p>
-        <p>{{ el.to }}</p>
+  <div class="min-w-full flex justify-between">
+    <div class="flex flex-col w-1/2">
+      <div
+        class="text-white flex flex-col gap-2 mt-4 p-8 rounded-md border-2 bg-[#101010]"
+        v-for="(el, index) in companyData"
+        :key="index"
+        @click="el.tab"
+        :class="{ 'border-primary-green': el.tab }"
+      >
+        <h3>{{ el.name }}</h3>
+        <h4>{{ el.position }}</h4>
+        <p>{{ el.time }}</p>
+        <div class="flex gap-4">
+          <p>{{ el.from }}</p>
+          <p>{{ el.to }}</p>
+        </div>
       </div>
     </div>
-
-    <div class="  w-1/2">
-      <div v-if="tab == 1">
-        <img src="" alt="test1" />
-        <h1>testing</h1>
+    <div class="w-1/2 flex justify-center relative">
+      <div
+        v-if="tab == 1"
+        class="flex flex-col justify-center items-start gap-4 max-w-[50%]"
+      >
+        <img
+          src="/img/companyimg.svg"
+          alt="test1"
+          class="absolute top-[20%] left-[20%] min-w-[350px]"
+        />
+        <h1>Tactica</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+          facilis libero consequuntur animi eius iure ipsum commodi nam
+          asperiores temporibus.
+        </p>
       </div>
 
-      <div v-if="tab == 2">
-        <img src="" alt="test2" />
-        <h1>testing</h1>
+      <div
+        v-if="tab == 2"
+        class="flex flex-col justify-center items-start gap-4 max-w-[50%]"
+      >
+        <img
+          src="/img/companyimg.svg"
+          alt="test1"
+          class="absolute top-[20%] left-[20%] min-w-[350px]"
+        />
+        <h1>MeshCOM</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+          facilis libero consequuntur animi eius iure ipsum commodi nam
+          asperiores temporibus.
+        </p>
       </div>
 
-      <div v-if="tab == 3">
-        <img src="" alt="test3" />
-        <h1>testing</h1>
+      <div
+        v-if="tab == 3"
+        class="flex flex-col justify-center items-start gap-4 max-w-[50%]"
+      >
+        <img
+          src="/img/companyimg.svg"
+          alt="test1"
+          class="absolute top-[20%] left-[20%] min-w-[350px]"
+        />
+        <h1>FinnieConsulting</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+          facilis libero consequuntur animi eius iure ipsum commodi nam
+          asperiores temporibus.
+        </p>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -115,4 +142,3 @@ export default {
   },
 };
 </script>
-
