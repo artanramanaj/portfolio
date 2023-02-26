@@ -33,6 +33,11 @@ const router = createRouter({
       name: "mobile",
       component: () => import("../components/MobileMenu.vue"),
     },
+    {
+      path: "/faqs",
+      name: "faqs",
+      component: () => import("../views/FaqsViews.vue"),
+    },
   ],
 });
 
