@@ -6,7 +6,7 @@
         v-for="(el, index) in companyData"
         :key="index"
         @click="el.tab"
-        :class="{ 'border-primary-green': el.tab }"
+        :class="{ 'border-primary-green': index }"
       >
         <h3>{{ el.name }}</h3>
         <h4>{{ el.position }}</h4>
@@ -78,6 +78,7 @@ export default {
   data() {
     return {
       tab: 1,
+      activeIndex: 1,
       companyData: [
         {
           name: "tactica",
@@ -86,7 +87,7 @@ export default {
           time: "6 months",
           from: "01.05.2021",
           to: "30.10.2021",
-          tab: this.activeTabOne,
+          tab: this.activeTabOne(),
         },
         {
           name: "MeshCOM",
@@ -95,7 +96,7 @@ export default {
           time: "12 months",
           from: "01.11.2021",
           to: "01.10.2022",
-          tab: this.activeTabTwo,
+          tab: this.activeTabTwo(),
         },
         {
           name: "FinnieConsulting",
@@ -104,7 +105,7 @@ export default {
           time: "6 months",
           from: "01.11.2021",
           to: "currently",
-          tab: this.activeTabThree,
+          tab: this.activeTabThree(),
         },
       ],
       companyContent: [
@@ -128,15 +129,13 @@ export default {
   },
 
   methods: {
-    activeTabOne() {
+    activeTabOne(activeIndex) {
       this.tab = 1;
-      console.log(this.tab);
     },
-    activeTabTwo() {
+    activeTabTwo(activeIndex) {
       this.tab = 2;
-      console.log(this.tab);
     },
-    activeTabThree() {
+    activeTabThree(activeIndex) {
       this.tab = 3;
     },
   },
