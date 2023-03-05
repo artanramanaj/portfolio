@@ -1,7 +1,7 @@
 <template>
   <div class="container py-20">
     <div class="flex justify-center gap-4">
-      <button class="primary-btn">Vue</button>
+      <button class="primary-btn" @click="checkVue">Vue</button>
       <button class="primary-btn">React</button>
       <button class="primary-btn">Javascript</button>
       <button class="primary-btn">WordPress</button>
@@ -27,6 +27,18 @@ export default {
     return {
       projects: servicesStore(),
     };
+  },
+  mounted() {
+    console.log(this.projects.projects);
+  },
+  methods: {
+    checkVue() {
+      this.projects.projects.filter((project) => {
+        if (project.tech == "vue") {
+          console.log(project.tech == "vue");
+        }
+      });
+    },
   },
 };
 </script>
