@@ -2,11 +2,10 @@
   <div class="min-w-full flex justify-between">
     <div class="flex flex-col w-1/2">
       <div
-        class="text-white flex flex-col gap-2 mt-4 p-8 rounded-md border-2 bg-[#101010]"
+        class="text-white flex flex-col gap-2 mt-4 p-8 rounded-md border-2 bg-[#101010] border-primary-green"
         v-for="(el, index) in companyData"
         :key="index"
         @click="el.tab"
-        :class="{ 'border-primary-green': index }"
       >
         <h3>{{ el.name }}</h3>
         <h4>{{ el.position }}</h4>
@@ -78,7 +77,7 @@ export default {
   data() {
     return {
       tab: 1,
-      activeIndex: 1,
+      active: false,
       companyData: [
         {
           name: "tactica",
@@ -87,7 +86,7 @@ export default {
           time: "6 months",
           from: "01.05.2021",
           to: "30.10.2021",
-          tab: this.activeTabOne(),
+          tab: this.activeTabOne,
         },
         {
           name: "MeshCOM",
@@ -96,7 +95,7 @@ export default {
           time: "12 months",
           from: "01.11.2021",
           to: "01.10.2022",
-          tab: this.activeTabTwo(),
+          tab: this.activeTabTwo,
         },
         {
           name: "FinnieConsulting",
@@ -105,7 +104,7 @@ export default {
           time: "6 months",
           from: "01.11.2021",
           to: "currently",
-          tab: this.activeTabThree(),
+          tab: this.activeTabThree,
         },
       ],
       companyContent: [
@@ -129,14 +128,17 @@ export default {
   },
 
   methods: {
-    activeTabOne(activeIndex) {
+    activeTabOne() {
       this.tab = 1;
+      this.active = !this.active;
     },
-    activeTabTwo(activeIndex) {
+    activeTabTwo() {
       this.tab = 2;
+      this.active = !this.active;
     },
-    activeTabThree(activeIndex) {
+    activeTabThree() {
       this.tab = 3;
+      this.active = !this.active;
     },
   },
 };
