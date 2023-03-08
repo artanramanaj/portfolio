@@ -23,21 +23,31 @@
         Hire Me
       </li>
     </ul>
-    <img
+    <!-- <img
       src="/img/menu.png"
       alt=""
       class="flex md:hidden"
+      @close-modal="this.showMenu = !this.showMenu"
+    /> -->
+    <img
+      src="/img/menu.png"
+      alt=""
+      class="flex z-[1111] md:hidden"
       @click="this.showMenu = !this.showMenu"
     />
   </div>
 
-  <MobileMenu v-if="showMenu" :testing="showMenu" />
+  <MobileMenu
+    v-if="showMenu"
+    @hideModal="this.showMenu = !this.showMenu"
+    :testing="showMenu"
+  />
 </template>
 
 <script>
 import MobileMenu from "./MobileMenu.vue";
 export default {
-  name: "nav",
+  name: "navbarApp",
   data() {
     return {
       showMenu: false,

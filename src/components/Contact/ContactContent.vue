@@ -1,23 +1,67 @@
 <template>
   <div>
-    <form action="" class="flex flex-col items-start gap-4 text-black">
-      <input type="text" class="w-1/2 p-2 rounded-lg" />
-      <input type="email" class="w-1/2 p-2 rounded-lg" />
-      <textarea
-        name=""
-        id=""
-        cols="30"
-        rows="10 "
-        class="w-1/2 p-2 rounded-lg"
-      ></textarea>
-      <button class="primary-btn">submit</button>
-    </form>
+    <VeeForm
+      class="flex flex-col items-center gap-4 text-black"
+      :validation-schema="schema"
+      @submit="submitForm"
+    >
+      <label
+        for=""
+        class="flex flex-col w-full lg:w-1/2 text-white capitalize gap-1"
+        >name
+        <VeeField
+          type="text"
+          name="username"
+          class="p-2 rounded-lg text-black"
+        />
+        <ErrorMessage class="text-red-500" name="username" />
+      </label>
+
+      <label
+        for=""
+        class="flex flex-col w-full lg:w-1/2 text-white capitalize gap-1"
+        >Email
+        <VeeField type="email" name="email" class="p-2 rounded-lg text-black" />
+        <ErrorMessage class="text-red-500" name="email" />
+      </label>
+
+      <label
+        for=""
+        class="flex flex-col w-full lg:w-1/2 text-white capitalize gap-1"
+        >Message
+        <VeeField
+          as="textarea"
+          name="textarea"
+          id=""
+          cols="30"
+          rows="10"
+          class="p-2 rounded-lg text-black"
+        />
+        <ErrorMessage class="text-red-500" name="textarea" />
+      </label>
+      <button class="primary-btn w-full lg:w-1/2 border-0 focus:outline-none">
+        submit
+      </button>
+    </VeeForm>
   </div>
 </template>
 
 <script>
 export default {
   name: "contactcontent",
+  data() {
+    return {
+      schema: {
+        username: "required|min:5|max:20",
+        email: "required|email",
+        textarea: "required|min:10|max:100",
+      },
+    };
+  },
+  methods: {
+    submitForm(values) {
+      console.log("submited", values);
+    },
+  },
 };
 </script>
-
