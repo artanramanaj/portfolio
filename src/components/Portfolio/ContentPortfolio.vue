@@ -1,6 +1,6 @@
 <template>
   <div class="container py-20">
-    <div class="flex justify-center gap-4">
+    <div class="flex flex-wrap justify-center gap-4">
       <button class="primary-btn" @click="allProjects">All</button>
       <button class="primary-btn" @click="filterProjects('vue')">Vue</button>
       <button class="primary-btn" @click="filterProjects('react')">
@@ -13,13 +13,13 @@
         WordPress
       </button>
     </div>
-    <div class="flex flex-col justify-center gap-8 flex-wrap pt-20 md:flex-row">
+    <div class="flex flex-col justify-start gap-8 flex-wrap pt-20 md:flex-row">
       <div
-        class="even:mt-8 max-w-[20%]"
+        class="flex flex-col items-center even:mt-8 w-full md:w-[30%] lg:w-[20%]"
         v-for="(el, index) in filteredPorjects"
         :key="index"
       >
-        <img :src="el.img" />
+        <img :src="el.img" class="w-1/2 md:w-full" />
       </div>
     </div>
   </div>

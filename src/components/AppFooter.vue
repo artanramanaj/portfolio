@@ -15,9 +15,9 @@
       <h4>Company</h4>
       <ul class="flex flex-col gap-2 cursor-pointer">
         <router-link to="/">Home</router-link>
-        <li>Portfolio</li>
-        <li>Services</li>
-        <li>Contact</li>
+        <router-link to="/portfolio">Portfolio</router-link>
+        <router-link to="/services">Services</router-link>
+        <router-link to="/contact">Contact</router-link>
       </ul>
     </div>
 

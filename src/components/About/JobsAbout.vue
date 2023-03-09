@@ -1,5 +1,5 @@
 <template>
-  <div class="container text-white">
+  <div class="container text-white px-2">
     <h1>jobsss</h1>
     <CompanyAbout />
   </div>

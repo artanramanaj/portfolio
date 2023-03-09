@@ -9,12 +9,8 @@
         for=""
         class="flex flex-col w-full lg:w-1/2 text-white capitalize gap-1"
         >name
-        <VeeField
-          type="text"
-          name="username"
-          class="p-2 rounded-lg text-black"
-        />
-        <ErrorMessage class="text-red-500" name="username" />
+        <VeeField type="text" name="name" class="p-2 rounded-lg text-black" />
+        <ErrorMessage class="text-red-500" name="name" />
       </label>
 
       <label
@@ -31,13 +27,13 @@
         >Message
         <VeeField
           as="textarea"
-          name="textarea"
+          name="message"
           id=""
           cols="30"
           rows="10"
           class="p-2 rounded-lg text-black"
         />
-        <ErrorMessage class="text-red-500" name="textarea" />
+        <ErrorMessage class="text-red-500" name="message" />
       </label>
       <button class="primary-btn w-full lg:w-1/2 border-0 focus:outline-none">
         submit
@@ -52,9 +48,9 @@ export default {
   data() {
     return {
       schema: {
-        username: "required|min:5|max:20",
+        name: "required|min:5|max:20",
         email: "required|email",
-        textarea: "required|min:10|max:100",
+        message: "required|min:10|max:100",
       },
     };
   },

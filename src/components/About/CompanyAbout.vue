@@ -1,5 +1,5 @@
 <template>
-  <div class="min-w-full flex flex-col justify-between md:flex-row">
+  <div class="min-w-full flex flex-col justify-between md:flex-row gap-4">
     <div class="flex flex-col w-full md:w-1/2">
       <div
         class="text-white flex flex-col gap-2 mt-4 p-8 rounded-md border-2 bg-[#101010]"
@@ -22,12 +22,12 @@
     <div class="w-1/2 flex justify-center relative">
       <div
         v-if="tab == 1"
-        class="flex flex-col justify-center items-start gap-4 max-w-[50%]"
+        class="flex flex-col justify-center items-start gap-4 w-[100%]"
       >
         <img
           src="/img/companyimg.svg"
           alt="test1"
-          class="absolute top-[20%] left-[20%] min-w-[350px]"
+          class="absolute top-[20%] left-[60%] lg:left-[20%] w-[250px] h-[250px] lg:w-[350px] lg:h-[350px]"
         />
         <h1>Tactica</h1>
         <p>
@@ -39,12 +39,12 @@
 
       <div
         v-if="tab == 2"
-        class="flex flex-col justify-center items-start gap-4 max-w-[50%]"
+        class="flex flex-col justify-center items-start gap-4 w-[100%]"
       >
         <img
           src="/img/companyimg.svg"
           alt="test1"
-          class="absolute top-[20%] left-[20%] min-w-[350px]"
+          class="absolute top-[20%] left-[60%] lg:left-[20%] w-[250px] h-[250px] lg:w-[350px] lg:h-[350px]"
         />
         <h1>MeshCOM</h1>
         <p>
@@ -56,12 +56,12 @@
 
       <div
         v-if="tab == 3"
-        class="flex flex-col justify-center items-start gap-4 max-w-[50%]"
+        class="flex flex-col justify-center items-start gap-4 w-[100%]"
       >
         <img
           src="/img/companyimg.svg"
           alt="test1"
-          class="absolute top-[20%] left-[20%] min-w-[350px]"
+          class="absolute top-[20%] left-[60%] md:left-[20%] w-[200px] h-[200px] md:w-[350px] md:h-[350px]"
         />
         <h1>FinnieConsulting</h1>
         <p>
