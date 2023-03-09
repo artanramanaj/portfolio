@@ -38,6 +38,10 @@ const router = createRouter({
       name: "faqs",
       component: () => import("../views/FaqsViews.vue"),
     },
+    {
+      path: "/:catchAll(.*)*",
+      component:() => import("../views/ErrorViews.vue")
+    }
   ],
   linkExactActiveClass: 'text-primary-green '
 });

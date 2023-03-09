@@ -7,7 +7,9 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       <div class="flex gap-4">
         <img src="/img/instagram.svg" alt="" class="w-[24px]" />
-        <img src="/img/github.svg" alt="" class="w-[24px]" />
+        <a href="https://bitbucket.org/ar38263/">
+          <img src="/img/bitbucket1.png" alt="" class="w-[24px]" />
+        </a>
         <img src="/img/linkedin.svg" alt="" class="w-[24px]" />
       </div>
     </div>
