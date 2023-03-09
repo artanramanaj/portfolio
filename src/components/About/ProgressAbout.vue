@@ -3,7 +3,7 @@
     <div class="relative min-h-40">
       <div class="flex" v-for="(el, index) in progressList" :key="index">
         <div
-          class="text-white m-2 rounded p-2"
+          class="text-white m-2 rounded p-1"
           :style="{ width: el.progress + '%', background: el.color }"
         >
           {{ el.name }} {{ el.progress + "%" }}

@@ -1,10 +1,13 @@
 <template>
-  <div class="min-w-full flex justify-between">
-    <div class="flex flex-col w-1/2">
+  <div class="min-w-full flex flex-col justify-between md:flex-row">
+    <div class="flex flex-col w-full md:w-1/2">
       <div
-        class="text-white flex flex-col gap-2 mt-4 p-8 rounded-md border-2 bg-[#101010] border-primary-green"
+        class="text-white flex flex-col gap-2 mt-4 p-8 rounded-md border-2 bg-[#101010]"
+        :class="el.name == active ? 'border-primary-green' : ''"
         v-for="(el, index) in companyData"
+        data-class="boxes"
         :key="index"
+        :id="`box${index}`"
         @click="el.tab"
       >
         <h3>{{ el.name }}</h3>
@@ -77,7 +80,7 @@ export default {
   data() {
     return {
       tab: 1,
-      active: false,
+      active: "tactica",
       companyData: [
         {
           name: "tactica",
@@ -130,15 +133,15 @@ export default {
   methods: {
     activeTabOne() {
       this.tab = 1;
-      this.active = !this.active;
+      this.active = "tactica";
     },
     activeTabTwo() {
       this.tab = 2;
-      this.active = !this.active;
+      this.active = "MeshCOM";
     },
     activeTabThree() {
       this.tab = 3;
-      this.active = !this.active;
+      this.active = "FinnieConsulting";
     },
   },
 };

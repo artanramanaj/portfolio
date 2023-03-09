@@ -1,9 +1,9 @@
 <template>
   <div
-    class="container w-full flex flex-col md:items-center md:justify-between md:flex-row py-10 px-2"
+    class="container w-full flex flex-col lg:items-center lg:justify-between lg:flex-row py-10 px-2"
   >
     <div
-      class="w-full flex flex-col items-start justify-between gap-4 text-white lg:w-1/2"
+      class="w-full flex flex-col items-center lg:items-start justify-between gap-4 text-white lg:w-1/2"
     >
       <h1>
         Hi I’m Artan Ramanaj I am a
