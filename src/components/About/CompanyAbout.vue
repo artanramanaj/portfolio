@@ -31,9 +31,10 @@
         />
         <h1>Tactica</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-          facilis libero consequuntur animi eius iure ipsum commodi nam
-          asperiores temporibus.
+          In my previous role as a WordPress developer, I designed and developed
+          user-friendly websites using Elementor as a page builder and Figma as
+          a design tool. I collaborated with other team members to ensure
+          optimal performance and user experience.
         </p>
       </div>
 
@@ -48,9 +49,10 @@
         />
         <h1>MeshCOM</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-          facilis libero consequuntur animi eius iure ipsum commodi nam
-          asperiores temporibus.
+          In my previous role as a frontend developer, I designed and developed
+          user interfaces using latest Frontend tech. I collaborated with teams
+          to ensure optimal performance and stayed up-to-date with industry
+          trends.
         </p>
       </div>
 
@@ -65,9 +67,10 @@
         />
         <h1>FinnieConsulting</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-          facilis libero consequuntur animi eius iure ipsum commodi nam
-          asperiores temporibus.
+          In my current role as a frontend developer, I create visually
+          appealing and responsive interfaces that engage users and enhance
+          their overall experience. I stay up-to-date with the latest industry
+          trends to continuously improve the quality of my work.
         </p>
       </div>
     </div>
@@ -103,7 +106,7 @@ export default {
         {
           name: "FinnieConsulting",
           description: "lorem ipsum lorem ipsum",
-          position: "WordPress Developer",
+          position: "Frontend Developer",
           time: "6 months",
           from: "01.11.2021",
           to: "currently",
