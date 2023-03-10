@@ -51,22 +51,22 @@ export const servicesStore = defineStore("allServicesStore", {
     ],
     projects: [
       {
-        name:"uni-project/2024",
+        name: "uni-project/2024",
         img: "/img/project1.svg",
         tech: "vue",
       },
       {
-        name:"switch",
+        name: "switch",
         img: "/img/project2.svg",
         tech: "vue",
       },
       {
-        name:"planet-verify",
+        name: "planet-verify",
         img: "/img/project3.svg",
         tech: "wordpress",
       },
       {
-        name:"Elisabeth"
+        name: "Elisabeth",
         img: "/img/project4.svg",
         tech: "wordpress",
       },
