@@ -9,45 +9,20 @@ export const servicesStore = defineStore("allServicesStore", {
         description: "lorem ipsum 1 dummy",
       },
       {
-        img: "/img/whiteTag.svg",
+        img: "/img/webdesign.png",
         name: "service 2",
         description: "lorem ipsum 2 dummy",
       },
       {
-        img: "/img/whiteTag.svg",
+        img: "/img/seo.png",
         name: "service 3",
         description: "lorem ipsum 3 dummy",
       },
       {
-        img: "/img/whiteTag.svg",
+        img: "/img/responsive.png",
         name: "service 4",
         description: "lorem ipsum 4 dummy",
-      },
-      {
-        img: "/img/whiteTag.svg",
-        name: "service 5",
-        description: "lorem ipsum 5 dummy",
-      },
-      {
-        img: "/img/whiteTag.svg",
-        name: "service 6",
-        description: "lorem ipsum 6 dummy",
-      },
-      {
-        img: "/img/whiteTag.svg",
-        name: "service 7",
-        description: "lorem ipsum 7 dummy",
-      },
-      {
-        img: "/img/whiteTag.svg",
-        name: "service 8",
-        description: "lorem ipsum 8 dummy",
-      },
-      {
-        img: "/img/whiteTag.svg",
-        name: "service 9",
-        description: "lorem ipsum 9  dummy",
-      },
+      }
     ],
     projects: [
       {
