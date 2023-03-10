@@ -67,7 +67,7 @@
         />
         <h1>FinnieConsulting</h1>
         <p>
-          In my current role as a frontend developer, I create visually
+          In my current role as a Frontend developer, I create visually
           appealing and responsive interfaces that engage users and enhance
           their overall experience. I stay up-to-date with the latest industry
           trends to continuously improve the quality of my work.
@@ -83,10 +83,10 @@ export default {
   data() {
     return {
       tab: 1,
-      active: "tactica",
+      active: "Tactica",
       companyData: [
         {
-          name: "tactica",
+          name: "Tactica",
           description: "lorem ipsum lorem ipsum",
           position: "WordPress Developer & UI/UX Designer",
           time: "6 months",
@@ -136,7 +136,7 @@ export default {
   methods: {
     activeTabOne() {
       this.tab = 1;
-      this.active = "tactica";
+      this.active = "Tactica";
     },
     activeTabTwo() {
       this.tab = 2;

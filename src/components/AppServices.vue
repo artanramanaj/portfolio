@@ -8,7 +8,7 @@
       class="w-full flex flex-col md:flex-row flex-wrap gap-4 justify-start md:gap-8"
     >
       <div
-        class="bg-primary-black flex flex-col gap-4 justify-center items-center px-4 py-8 rounded-md w-full md:w-[30%] min-h-[400px] cursor-pointer hover:bg-primary-green"
+        class="bg-primary-black flex flex-col gap-4 justify-center items-center px-4 py-8 rounded-md w-full md:w-[30%] min-h-[400px] hover:bg-primary-green hover:transition hover:ease-in-out hover:delay-150"
         v-for="(el, index) in showSkills"
         :key="index"
       >
