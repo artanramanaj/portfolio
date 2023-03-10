@@ -44,7 +44,7 @@
             <p>+383 49 565 644</p>
           </div>
           <div class="flex gap-4">
-            <img src="img/location.png" alt="location" />
+            <img src="/img/location.png" alt="location" />
             <p>Pristina, Kosovo</p>
           </div>
         </div>
