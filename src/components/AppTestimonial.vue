@@ -9,11 +9,11 @@
   >
     <slide v-for="(slide, index) in testimonial" :key="index">
       <div
-        class="bg-primary-black flex flex-col items-center justify-center min-h-[400px] p-4 break-words rounded-md hover:bg-primary-green cursor-pointer transition-all"
+        class="bg-primary-black flex flex-col items-center justify-center min-h-[400px] p-4 break-words rounded-md hover:bg-primary-green cursor-pointer transition-all gap-2"
       >
         <img :src="slide.img" alt="testt" />
 
-        <h1>{{ slide.name }}</h1>
+        <h2>{{ slide.name }}</h2>
         <p>{{ slide.description }}</p>
       </div>
     </slide>
@@ -37,39 +37,27 @@ export default {
       testimonial: [
         {
           img: "/img/imgTestimonial.svg",
-          name: "Artan 1",
+          name: "Almedin Nasufi",
           description:
-            "lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur  ",
+            "Thanks to our new website, our online sales have skyrocketed and we've been able to reach a wider audience than ever before. Hiring a web developer was one of the best decisions we've ever made for our business. ",
         },
         {
           img: "/img/imgTestimonial.svg",
-          name: "Artan 2",
+          name: "Olt Latifi",
           description:
-            "lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur ",
+            "Since you developed my website, my online presence has soared! I couldn't be happier with the results. You truly delivered on your promise - thank you!",
         },
         {
           img: "/img/imgTestimonial.svg",
-          name: "Artan 3",
+          name: "Elton Metolli",
           description:
-            "lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur ",
+            "The design is eye-catching and user-friendly, and the development is seamless. I couldn't be happier with the end result. Thank you! ",
         },
         {
           img: "/img/imgTestimonial.svg",
-          name: "Artan 4",
+          name: "Suad Kodraliu",
           description:
-            "lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur ",
-        },
-        {
-          img: "/img/imgTestimonial.svg",
-          name: "Artan 5",
-          description:
-            "lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur ",
-        },
-        {
-          img: "/img/imgTestimonial.svg",
-          name: "Artan 6",
-          description:
-            "lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur ",
+            "You did an amazing job on my website! Not only does it look great, but it's also optimized for search engines. I've seen a huge increase in traffic and leads. Thank you!",
         },
       ], // carousel settings
       settings: {

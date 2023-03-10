@@ -4,7 +4,7 @@
   >
     <div class="flex flex-col gap-4">
       <h4>AR</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Crafting exceptional websites to bring your vision to life.</p>
       <div class="flex gap-4">
         <img src="/img/instagram.svg" alt="" class="w-[24px]" />
         <a href="https://bitbucket.org/ar38263/">

@@ -10,12 +10,10 @@
         </div>
       </div>
     </div>
-    <BoxAbout />
   </div>
 </template>
 
 <script>
-import BoxAbout from "./BoxAbout.vue";
 export default {
   name: "progressAbout",
   data() {
@@ -56,11 +54,28 @@ export default {
           progress: 95,
           color: "#00CE79",
         },
+        {
+          name: "Elementor",
+          progress: 95,
+          color: "#00CE79",
+        },
+        {
+          name: "WooCommerce",
+          progress: 90,
+          color: "#00CE79",
+        },
+        {
+          name: "Shopify",
+          progress: 80,
+          color: "#00CE79",
+        },
+        {
+          name: "Figma",
+          progress: 90,
+          color: "#00CE79",
+        },
       ],
     };
-  },
-  components: {
-    BoxAbout,
   },
 };
 </script>
