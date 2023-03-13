@@ -20,6 +20,9 @@
     <button class="primary-btn" @click="loadSkills" v-if="btnValue">
       Load More
     </button>
+    <button class="primary-btn" @click="showLess" v-if="!btnValue">
+      Show Less
+    </button>
     <div></div>
   </div>
 </template>
@@ -46,6 +49,13 @@ export default {
       this.showSkills = this.skills.allServices.slice(0, this.skillNumber);
       this.skillNumber = this.skills.allServices.length;
       this.btnValue = false;
+    },
+    showLess() {
+      this.skillNumber = 3;
+
+      this.showSkills = this.skills.allServices.slice(0, this.skillNumber);
+      this.skillNumber = this.skills.allServices.length;
+      this.btnValue = true;
     },
   },
 };

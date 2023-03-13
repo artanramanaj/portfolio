@@ -3,7 +3,7 @@
     class="container flex flex-col justify-center items-center gap-4 text-white px-2 py-20"
   >
     <p class="text-primary-green">Portfolio</p>
-    <h1>Projects</h1>
+    <h1 class="text-white">Projects</h1>
     <div
       class="w-full flex flex-col md:flex-row flex-wrap gap-4 justify-between"
     >
@@ -14,12 +14,15 @@
       >
         <div class="h-full">
           <img :src="el.img" alt="logo" />
-          <h1></h1>
+          <h1>{{ el.name }}</h1>
         </div>
       </div>
     </div>
     <button class="primary-btn" @click="checkPorjects" v-if="hideBtn">
       Load More
+    </button>
+    <button class="primary-btn" @click="showLess" v-if="!hideBtn">
+      ShowLess
     </button>
   </div>
 </template>
@@ -47,6 +50,10 @@ export default {
         this.projects.projects.length
       );
       this.hideBtn = false;
+    },
+    showLess() {
+      this.mainProjects = this.projects.projects.slice(0, this.shownProjects);
+      this.hideBtn = true;
     },
   },
 };

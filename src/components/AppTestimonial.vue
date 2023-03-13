@@ -1,28 +1,31 @@
 <template>
   <!-- <carousel :items-to-show="3" :wrap-around="true" :breakpoints="breakpoints" class="text-white"> -->
-  <carousel
-    :settings="settings"
-    :autoplay="4000"
-    :breakpoints="breakpoints"
-    :wrap-around="true"
-    class="text-white container px-2 py-20"
-  >
-    <slide v-for="(slide, index) in testimonial" :key="index">
-      <div
-        class="bg-primary-black flex flex-col items-center justify-center min-h-[400px] p-4 break-words rounded-md hover:bg-primary-green cursor-pointer transition-all gap-2"
-      >
-        <img :src="slide.img" alt="testt" />
+  <div class="py-20">
+    <h1 class="text-center text-white">Client Testimonial</h1>
+    <carousel
+      :settings="settings"
+      :autoplay="4000"
+      :breakpoints="breakpoints"
+      :wrap-around="true"
+      class="text-white container px-2"
+    >
+      <slide v-for="(slide, index) in testimonial" :key="index">
+        <div
+          class="bg-primary-black flex flex-col items-center justify-center min-h-[400px] p-4 break-words rounded-md hover:bg-primary-green cursor-pointer transition-all gap-2"
+        >
+          <img :src="slide.img" alt="testt" />
 
-        <h2>{{ slide.name }}</h2>
-        <p>{{ slide.description }}</p>
-      </div>
-    </slide>
+          <h2>{{ slide.name }}</h2>
+          <p>{{ slide.description }}</p>
+        </div>
+      </slide>
 
-    <template #addons>
-      <navigation />
-      <pagination />
-    </template>
-  </carousel>
+      <template #addons>
+        <navigation />
+        <pagination />
+      </template>
+    </carousel>
+  </div>
 </template>
 
 <script>

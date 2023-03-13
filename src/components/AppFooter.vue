@@ -7,14 +7,14 @@
       <p>Crafting exceptional websites to bring your vision to life.</p>
       <div class="flex gap-4">
         <a href="https://www.instagram.com/artanrramanaj/" target="_blank">
-          <img src="/img/instagram.svg" alt="" class="w-[24px]" />
+          <img src="/img/primary-instagram.svg" alt="" class="w-[24px]" />
         </a>
         <a href="https://bitbucket.org/ar38263/" target="_blank">
-          <img src="/img/bitbucket1.png" alt="" class="w-[24px]" />
+          <img src="/img/primary-bitbucket.svg" alt="" class="w-[24px]" />
         </a>
 
         <a href="https://www.linkedin.com/in/artan-ramanaj/" target="_blank">
-          <img src="/img/linkedin.svg" alt="" class="w-[24px]" />
+          <img src="/img/primary-linkedin.svg" alt="" class="w-[24px]" />
         </a>
       </div>
     </div>
