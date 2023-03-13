@@ -1,20 +1,24 @@
 <template>
-<div class="bg-[url('/img/serviceBackground.svg')] bg-blend-darken bg-cover bg-no-repeat rounded w-full min-h-[50vh]">
-  <div class=" min-h-[50vh] flex flex-col justify-center items-center gap-4 text-white px-2 container">
-    <h1>
-      Hi I’m Gery Simon I am a web
-      <span class="text-[40px] text-primary-green font-semibold">developer</span> and a
-      Designer.
-    </h1>
-    <p class="text-center">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est adipiscing
-      velit dolor nulla porta eu ut eget. Lobortis vulputate blandit fermentum
-      vel, nisi, ornare libero, amet nulla.
-    </p>
-    <button class="text-primary-green">Let’s talk</button>
+  <div
+    class="bg-[url('/img/serviceBackground.svg')] bg-blend-darken bg-cover bg-no-repeat rounded w-full min-h-[50vh]"
+  >
+    <div
+      class="min-h-[50vh] flex flex-col justify-center items-center gap-4 text-white px-2 container"
+    >
+      <h1>
+        My Web Development
+        <span class="text-[40px] text-primary-green font-semibold"
+          >Services</span
+        >
+      </h1>
+      <p class="text-center">
+        I offer a range of web development services to help your business
+        succeed online. From website design to custom web applications, I've got
+        you covered.
+      </p>
+      <button class="text-primary-green">Let’s talk</button>
+    </div>
   </div>
-</div>
-
 </template>
 
 <script>

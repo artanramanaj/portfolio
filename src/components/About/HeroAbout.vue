@@ -6,11 +6,11 @@
       class="min-h-[50vh] flex flex-col justify-center items-center gap-4 text-white px-2 container"
     >
       <h1>
-        Hi I’m Gery Simon I am a
+        Hi I’m Artan Ramanaj I am a
         <span class="text-[40px] text-primary-green font-semibold"
           >Frontend Developer</span
         >
-        and a Designer.
+        and a UI/UX Designer.
       </h1>
       <p class="text-center">
         I'm a frontend developer with a passion for creating beautiful and
@@ -26,4 +26,3 @@ export default {
   name: "heroAbout",
 };
 </script>
-

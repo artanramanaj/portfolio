@@ -7,7 +7,7 @@
     </div>
 
     <div
-      class="w-full flex flex-col items-center md:items-start justify-between gap-8 md:flex-row"
+      class="w-full flex flex-col items-center md:items-center justify-between gap-8 md:flex-row"
     >
       <AboutText class="w-full md:w-1/2" />
       <progress-about class="w-full md:w-1/2"></progress-about>

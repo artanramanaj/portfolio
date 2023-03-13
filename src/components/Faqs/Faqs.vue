@@ -1,9 +1,10 @@
 <template>
-  <div>
+  <div class="flex flex-col items-center justify-center text-white">
     <div
       v-for="(item, index) in items"
       :key="index"
-      class="border-b border-primary-green"
+      class="border-2 p-2 mt-4 border-primary-black rounded-lg w-3/4"
+      :class="{ 'bg-primary-green text-black ': item.open }"
     >
       <button
         @click="toggle(index)"
@@ -11,8 +12,8 @@
       >
         <span class="text-lg">{{ item.title }}</span>
         <span
-          :class="{ 'transform rotate-180': item.open }"
-          class="text-gray-400"
+          :class="{ 'transform rotate-180 text-black': item.open }"
+          class="text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
