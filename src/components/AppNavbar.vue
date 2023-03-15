@@ -1,6 +1,10 @@
 <template>
-  <div class="container flex justify-between items-center min-h-[100px] px-2">
-    <img src="/img/AR.svg" alt="" />
+  <div
+    class="container flex justify-between items-center min-h-[100px] px-2 sticky top-0 z-[1111] bg-[#181818]"
+  >
+    <router-link to="/">
+      <img src="/img/AR.svg" alt="logo" />
+    </router-link>
     <ul class="text-white hidden md:flex">
       <li class="py-2 px-4">
         <router-link to="/">Home</router-link>

@@ -15,18 +15,7 @@ export const servicesStore = defineStore("allServicesStore", {
         description:
           "I create visually appealing and intuitive interfaces that provide users with a seamless digital experience. From wireframes to final designs, I focus on delivering interfaces that are both aesthetically pleasing and user-friendly, all while aligning with your brand's identity and goals.",
       },
-      {
-        img: "/img/seo.png",
-        name: "SEO",
-        description:
-          "I optimize websites to increase organic traffic and improve search engine rankings. I conduct thorough research and implement strategies such as keyword research, on-page optimization, and link building to improve your website's visibility and drive more qualified leads to your business.",
-      },
-      {
-        img: "/img/responsive.png",
-        name: "Responsive",
-        description:
-          "I create websites that adapt to any device, providing a seamless user experience across desktop, tablet, and mobile. With a mobile-first approach, I design and develop websites that are visually appealing, easy to use, and optimized for all screen sizes, resulting in increased engagement and conversion rates.",
-      },
+
       {
         img: "/img/wordpresslogo.png",
         name: "WordPress",
@@ -38,6 +27,18 @@ export const servicesStore = defineStore("allServicesStore", {
         name: "Elementor",
         description:
           "My expertise in Elementor allows me to create custom WordPress websites that are optimized for search engines and provide an outstanding user experience. Whether you need a new website or want to revamp an existing one, I can help you develop a solution that aligns with your brand goals and meets the needs of your target audience.",
+      },
+      {
+        img: "/img/responsive.png",
+        name: "Responsive",
+        description:
+          "I create websites that adapt to any device, providing a seamless user experience across desktop, tablet, and mobile. With a mobile-first approach, I design and develop websites that are visually appealing, easy to use, and optimized for all screen sizes, resulting in increased engagement and conversion rates.",
+      },
+      {
+        img: "/img/seo.png",
+        name: "SEO",
+        description:
+          "I optimize websites to increase organic traffic and improve search engine rankings. I conduct thorough research and implement strategies such as keyword research, on-page optimization, and link building to improve your website's visibility and drive more qualified leads to your business.",
       },
       {
         img: "/img/woocommerce.png",

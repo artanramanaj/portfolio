@@ -22,7 +22,7 @@
       Load More
     </button>
     <button class="primary-btn" @click="showLess" v-if="!hideBtn">
-      ShowLess
+      Show Less
     </button>
   </div>
 </template>
