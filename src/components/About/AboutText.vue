@@ -3,8 +3,8 @@
     <p>
       As a frontend developer, I'm passionate about creating engaging and
       intuitive user experiences through beautifully designed websites and web
-      applications. With [number] years of experience in the industry, I've
-      honed my skills in HTML, CSS, and JavaScript, as well as popular frontend
+      applications. With years of experience in the industry, I've honed my
+      skills in HTML, CSS, and JavaScript, as well as popular frontend
       frameworks such as React, Vue, and Angular. I'm committed to staying
       up-to-date with the latest industry trends and technologies to deliver the
       best possible results for my clients.
@@ -34,4 +34,3 @@ export default {
   name: "aboutText",
 };
 </script>
-

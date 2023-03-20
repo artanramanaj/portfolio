@@ -15,7 +15,9 @@
         custom websites that enhance your online presence and drive business
         growth. Let's build something great together!
       </p>
-      <button class="primary-btn">Contact Me</button>
+      <router-link to="/contact">
+        <button class="primary-btn">Contact Me</button>
+      </router-link>
     </div>
     <img src="/img/newmainbackground.svg" alt="background" />
   </div>

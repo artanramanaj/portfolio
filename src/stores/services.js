@@ -56,55 +56,65 @@ export const servicesStore = defineStore("allServicesStore", {
     projects: [
       {
         name: "uni-project/2024",
-        img: "/img/project1.svg",
+        img: "/img/projekt2024.svg",
         description:
           "this is website is developed using vue3 technologies and tailwind",
         tech: "vue",
       },
       {
         name: "switch",
-        img: "/img/project2.svg",
+        img: "/img/switch.svg",
         description:
           "this is website is developed using vue3 technologies and tailwind",
         tech: "vue",
       },
       {
         name: "planet-verify",
-        img: "/img/project3.svg",
+        img: "/img/switch.svg",
         description:
           "this is website is developed using vue3 technologies and tailwind",
         tech: "wordpress",
       },
       {
         name: "Elisabeth",
-        img: "/img/project4.svg",
+        img: "/img/switch.svg",
         description:
           "this is website is developed using Wordpress cms and elementor page builder",
         tech: "wordpress",
       },
       {
         name: "Elisabeth",
-        img: "/img/project1.svg",
+        img: "/img/projekt2024.svg",
+        description:
+          "this is website is developed using Wordpress cms and elementor page builder",
         tech: "react",
       },
       {
         name: "Elisabeth",
-        img: "/img/project2.svg",
+        img: "/img/projekt2024.svg",
+        description:
+          "this is website is developed using Wordpress cms and elementor page builder",
         tech: "javascript",
       },
       {
         name: "Elisabeth",
-        img: "/img/project3.svg",
+        img: "/img/projekt2024.svg",
+        description:
+          "this is website is developed using Wordpress cms and elementor page builder",
         tech: "wordpress",
       },
       {
         name: "Elisabeth",
-        img: "/img/project4.svg",
+        img: "/img/projekt2024.svg",
+        description:
+          "this is website is developed using Wordpress cms and elementor page builder",
         tech: "vue",
       },
       {
         name: "Elisabeth",
-        img: "/img/project1.svg",
+        img: "/img/projekt2024.svg",
+        description:
+          "this is website is developed using Wordpress cms and elementor page builder",
         tech: "react",
       },
     ],

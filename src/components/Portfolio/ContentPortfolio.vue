@@ -11,7 +11,7 @@
       <button
         class="bg-primary-green rounded text-white md:w-[10%]"
         @click="filterProjects('vue')"
-        :class="{ ' bg-primary-grey': isActive === 'vue' }"
+        :class="isActive == 'vue' ? 'bg-primary-grey' : ''"
       >
         Vue
       </button>
@@ -37,13 +37,13 @@
         WordPress
       </button>
     </div>
-    <div class="flex flex-col justify-start gap-8 flex-wrap pt-20 md:flex-row">
+    <div class="flex flex-col justify-center gap-8 flex-wrap pt-20 md:flex-row">
       <div
-        class="flex flex-col items-center even:mt-8 w-full md:w-[30%] lg:w-[20%]"
+        class="flex flex-col items-center w-full md:w-[30%] lg:w-[20%] p-4 bg-primary-black rounded-lg hover:bg-primary-grey hover:cursor-pointer hover:transition"
         v-for="(el, index) in filteredPorjects"
         :key="index"
       >
-        <img :src="el.img" class="w-1/2 md:w-full" />
+        <img :src="el.img" />
       </div>
     </div>
   </div>
