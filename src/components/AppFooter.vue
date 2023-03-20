@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="flex flex-col gap-4">
-      <h4>Company</h4>
+      <h4>Navigation</h4>
       <ul class="flex flex-col gap-2 cursor-pointer">
         <router-link to="/">Home</router-link>
         <router-link to="/about">About me</router-link>
@@ -30,7 +30,7 @@
     </div>
 
     <div class="flex flex-col gap-4">
-      <h4>Resources</h4>
+      <h4>Help Center</h4>
       <ul class="flex flex-col gap-2 cursor-pointer">
         <li>
           <router-link to="/faqs"> FAQ-s </router-link>
