@@ -3,7 +3,7 @@
     class="container w-full flex flex-col lg:items-center lg:justify-between lg:flex-row py-10 px-2"
   >
     <div
-      class="w-full flex flex-col items-center lg:items-start justify-between gap-4 text-white lg:w-1/2"
+      class="w-full flex flex-col items-center lg:items-start justify-between gap-4 text-white text-center lg:text-left lg:w-1/2"
     >
       <h1>
         Hi I’m Artan Ramanaj I am a
@@ -19,7 +19,11 @@
         <button class="primary-btn">Contact Me</button>
       </router-link>
     </div>
-    <img src="/img/newmainbackground.svg" alt="background" />
+    <img
+      src="/img/newmainbackground.svg"
+      alt="background"
+      class="md:w-1/2 md:h-1/2 w-full full"
+    />
   </div>
 </template>
 

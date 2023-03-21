@@ -57,6 +57,14 @@ export default {
   methods: {
     submitForm(values) {
       console.log("submited", values);
+      this.$toast.error(
+        `Thank you for your message. I'm sorry, but the form is currently in progress and I'm unable to process your request at this time. Please reach out to me using the contact information provided in the footer. Thank you for your patience and understanding.`,
+        {
+          position: "bottom-right",
+          duration: 15000,
+          dismissible: true,
+        }
+      );
     },
   },
 };

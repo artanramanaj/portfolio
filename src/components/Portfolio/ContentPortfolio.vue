@@ -1,6 +1,8 @@
 <template>
   <div class="container py-20">
-    <div class="flex flex-wrap justify-center gap-4">
+    <div
+      class="flex flex-col flex-wrap justify-center md:flex-row gap-4 px-4 md:px-0"
+    >
       <button
         class="bg-primary-green rounded text-white px-4 py-2 md:w-[10%]"
         @click="allProjects('all')"
@@ -9,7 +11,7 @@
         All
       </button>
       <button
-        class="bg-primary-green rounded text-white md:w-[10%]"
+        class="bg-primary-green rounded text-white px-4 py-2 md:w-[10%]"
         @click="filterProjects('vue')"
         :class="isActive == 'vue' ? 'bg-primary-grey' : ''"
       >
@@ -43,7 +45,7 @@
         v-for="(el, index) in filteredPorjects"
         :key="index"
       >
-        <img :src="el.img" />
+        <img :src="el.img" class="w-[120px] h-[50px]" />
       </div>
     </div>
   </div>
