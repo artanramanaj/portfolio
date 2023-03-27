@@ -45,7 +45,9 @@
         v-for="(el, index) in filteredPorjects"
         :key="index"
       >
-        <img :src="el.img" class="w-[120px] h-[50px]" />
+        <router-link :to="el.url">
+          <img :src="el.img" class="w-[120px] h-[50px]" />
+        </router-link>
       </div>
     </div>
   </div>

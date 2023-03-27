@@ -5,7 +5,7 @@
     <p class="text-primary-green">Portfolio</p>
     <h1 class="text-white">Projects</h1>
     <div
-      class="w-full flex flex-col md:flex-row flex-wrap gap-4 justify-between"
+      class="w-full flex flex-col md:flex-row flex-wrap gap-4 justify-center"
     >
       <div
         class="flex flex-col flex-wrap gap-4 justify-center items-center px-4 py-2 rounded-md w-full md:w-[30%]"
@@ -14,6 +14,7 @@
       >
         <div class="flex flex-col items-center justify-center w-full p-4 gap-2">
           <img :src="el.img" alt="logo" class="w-[120px] h-[50px]" />
+          <h3>{{ el.name }}</h3>
           <p class="text-center">{{ el.description }}</p>
           <router-link to="/">
             <button class="bg-transparent">More details</button>

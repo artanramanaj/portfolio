@@ -60,62 +60,65 @@ export const servicesStore = defineStore("allServicesStore", {
         description:
           "this is website is developed using vue3 technologies and tailwind",
         tech: "vue",
+        url: "/portfolio/projekt2024",
       },
       {
-        name: "switch",
+        name: "switch-tool",
         img: "/img/switch.svg",
         description:
           "this is website is developed using vue3 technologies and tailwind",
         tech: "vue",
+        url: "/portfolio/switch",
       },
+
+      {
+        name: "deingesundheitscoach",
+        img: "/img/elisabeth.png",
+        description:
+          "this is website is developed using Wordpress cms and elementor page builder",
+        tech: "wordpress",
+        url: "/portfolio/deingesundheitscoach",
+      },
+
       {
         name: "planet-verify",
-        img: "/img/switch.svg",
+        img: "/img/planetverify.svg",
         description:
           "this is website is developed using vue3 technologies and tailwind",
         tech: "wordpress",
+        url: "/portfolio/planetverify",
       },
       {
-        name: "Elisabeth",
-        img: "/img/switch.svg",
+        name: "FinnieConsulting",
+        img: "/img/finnieconsulting.png",
         description:
           "this is website is developed using Wordpress cms and elementor page builder",
         tech: "wordpress",
+        url: "/portfolio/finnieconsulting",
       },
       {
-        name: "Elisabeth",
-        img: "/img/projekt2024.svg",
-        description:
-          "this is website is developed using Wordpress cms and elementor page builder",
-        tech: "react",
-      },
-      {
-        name: "Elisabeth",
-        img: "/img/projekt2024.svg",
-        description:
-          "this is website is developed using Wordpress cms and elementor page builder",
-        tech: "javascript",
-      },
-      {
-        name: "Elisabeth",
-        img: "/img/projekt2024.svg",
+        name: "Eventveranstalter",
+        img: "/img/event.png",
         description:
           "this is website is developed using Wordpress cms and elementor page builder",
         tech: "wordpress",
+        url: "/portfolio/eventveranstalter",
       },
       {
-        name: "Elisabeth",
-        img: "/img/projekt2024.svg",
+        name: "Zahnarzt",
+        img: "/img/zahnarzt.svg",
         description:
           "this is website is developed using Wordpress cms and elementor page builder",
-        tech: "vue",
+        tech: "wordpress",
+        url: "/portfolio/zahnarzt",
       },
       {
-        name: "Elisabeth",
-        img: "/img/projekt2024.svg",
+        name: "Pgs-filesen",
+        img: "/img/PGS.svg",
         description:
           "this is website is developed using Wordpress cms and elementor page builder",
-        tech: "react",
+        tech: "wordpress",
+        url: "/portfolio/pgs",
       },
     ],
   }),
