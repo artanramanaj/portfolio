@@ -15,7 +15,7 @@
       location.
     </p>
     <button class="primary-btn">
-      <a href="#">Go to project</a>
+      <a href="https://pgs-fliesen.at/">Go to project</a>
     </button>
   </div>
 </template>

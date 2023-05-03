@@ -15,7 +15,7 @@
       health and well-being.
     </p>
     <button class="primary-btn">
-      <a href="">Go to project</a>
+      <a href="https://deingesundheitscoach.at/">Go to project</a>
     </button>
   </div>
 </template>
