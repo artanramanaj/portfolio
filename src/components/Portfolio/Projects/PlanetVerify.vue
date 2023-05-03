@@ -14,7 +14,7 @@
       ensuring that clients can trust that their information is safe and secure.
     </p>
     <button class="primary-btn">
-      <a href="#">Go to project</a>
+      <a href="https://planetverify.com/en/">Go to project</a>
     </button>
   </div>
 </template>

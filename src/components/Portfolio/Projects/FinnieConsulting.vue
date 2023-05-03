@@ -15,7 +15,7 @@
       meeting the needs and expectations of the end-users.
     </p>
     <button class="primary-btn">
-      <a href="#">Go to project</a>
+      <a href="https://finnie.consulting/">Go to project</a>
     </button>
   </div>
 </template>
