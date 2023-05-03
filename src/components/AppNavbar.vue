@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container flex justify-between items-center min-h-[100px] px-2 sticky top-0 z-[1111] bg-[#181818]"
+    class="container flex justify-between items-center min-h-[100px] px-2 z-[1111] bg-[#181818]"
   >
     <router-link to="/">
       <img src="/img/AR.svg" alt="logo" />
@@ -21,10 +21,8 @@
       <li class="py-2 px-4">
         <router-link to="/contact">Contact</router-link>
       </li>
-      <li
-        class="bg-primary-green py-2 px-4 rounded-lg cursor-pointer hover:bg-primary-grey"
-      >
-        Hire Me
+      <li class="py-2 px-4">
+        <router-link to="/faqs">FAQ-s</router-link>
       </li>
     </ul>
     <!-- <img

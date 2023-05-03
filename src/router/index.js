@@ -91,13 +91,13 @@ const router = createRouter({
   linkExactActiveClass: "text-primary-green ",
 });
 
-router.beforeEach((to, from, next) => {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: "smooth",
-  });
-  next();
-});
+// router.beforeEach((to, from, next) => {
+//   window.scrollTo({
+//     top: 0,
+//     left: 0,
+//     behavior: "smooth",
+//   });
+//   next();
+// });
 
 export default router;

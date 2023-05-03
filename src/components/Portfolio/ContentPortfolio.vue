@@ -17,13 +17,7 @@
       >
         Vue
       </button>
-      <button
-        class="bg-primary-green rounded text-white px-4 py-2 md:w-[10%]"
-        @click="filterProjects('react')"
-        :class="{ ' bg-primary-grey': isActive === 'react' }"
-      >
-        React
-      </button>
+
       <button
         class="bg-primary-green rounded text-white px-4 py-2 md:w-[10%]"
         @click="filterProjects('javascript')"
