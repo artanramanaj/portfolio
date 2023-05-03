@@ -13,7 +13,7 @@
         <div
           class="bg-primary-black flex flex-col items-center justify-center min-h-[400px] p-4 break-words rounded-md hover:bg-primary-green cursor-pointer transition-all gap-2"
         >
-          <img :src="slide.img" alt="testt" />
+          <!-- <img :src="slide.img" alt="testt" /> -->
 
           <h2>{{ slide.name }}</h2>
           <p>{{ slide.description }}</p>
@@ -45,7 +45,7 @@ export default {
             "Thanks to our new website, our online sales have skyrocketed and we've been able to reach a wider audience than ever before. Hiring a web developer was one of the best decisions we've ever made for our business. ",
         },
         {
-          img: "/img/imgTestimonial.svg",
+          img: "/img/avatar1.jpg",
           name: "Olt Latifi",
           description:
             "Since you developed my website, my online presence has soared! I couldn't be happier with the results. You truly delivered on your promise - thank you!",
