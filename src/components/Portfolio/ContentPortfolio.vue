@@ -6,7 +6,10 @@
       <button
         class="bg-primary-green rounded text-white px-4 py-2 md:w-[10%]"
         @click="allProjects('all')"
-        :class="{ ' bg-primary-grey': isActive === 'all' }"
+        :class="{
+          ' bg-primary-grey': isActive === 'all',
+          'bg-primary-grey': isDefault,
+        }"
       >
         All
       </button>
@@ -56,6 +59,7 @@ export default {
     return {
       projects: servicesStore(),
       filteredPorjects: [],
+      isDefault: true,
       isActive: "",
     };
   },
@@ -68,9 +72,10 @@ export default {
       this.isActive = tech1;
     },
     filterProjects(tech) {
-      this.filteredPorjects = this.projects.projects.filter(
-        (el) => el.tech == tech
-      );
+      (this.isDefault = false),
+        (this.filteredPorjects = this.projects.projects.filter(
+          (el) => el.tech == tech
+        ));
       this.isActive = tech;
     },
   },
