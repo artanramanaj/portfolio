@@ -20,10 +20,10 @@
 
       <button
         class="bg-primary-green rounded text-white px-4 py-2 md:w-[10%]"
-        @click="filterProjects('javascript')"
-        :class="{ ' bg-primary-grey': isActive === 'javascript' }"
+        @click="filterProjects('shopify')"
+        :class="{ ' bg-primary-grey': isActive === 'shopify' }"
       >
-        Javascript
+        Shopify
       </button>
       <button
         class="bg-primary-green rounded text-white px-4 py-2 md:w-[10%]"

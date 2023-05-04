@@ -13,7 +13,7 @@
       that patients receive personalized attention and support.
     </p>
     <button class="primary-btn">
-      <a href="#">Go to project</a>
+      <a href="https://zahnarzt-kerzers.ch/">Go to project</a>
     </button>
   </div>
 </template>

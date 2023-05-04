@@ -54,6 +54,12 @@ const router = createRouter({
         import("../components/Portfolio/Projects/Projekt2024.vue"),
     },
     {
+      path: "/portfolio/bluepet",
+      name: "bluepet",
+      component: () =>
+        import("../components/Portfolio/Projects/bluepet.vue"),
+    },
+    {
       path: "/portfolio/switch",
       name: "switch",
       component: () => import("../components/Portfolio/Projects/Switch.vue"),

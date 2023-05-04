@@ -13,7 +13,7 @@
       clients have a hassle-free experience.
     </p>
     <button class="primary-btn">
-      <a href="#">Go to project</a>
+      <a href="https://eventveranstalter.at/">Go to project</a>
     </button>
   </div>
 </template>

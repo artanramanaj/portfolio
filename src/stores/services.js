@@ -120,6 +120,14 @@ export const servicesStore = defineStore("allServicesStore", {
         tech: "wordpress",
         url: "/portfolio/pgs",
       },
+      {
+        name: "bluepet",
+        img: "/img/bluepet.png",
+        description:
+          "this is website is developed using Wordpress cms and elementor page builder",
+        tech: "shopify",
+        url: "/portfolio/bluepet",
+      },
     ],
   }),
 });
