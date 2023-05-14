@@ -76,18 +76,20 @@
     </div>
   </div>
 </template>
-
 <script>
+import moment from "moment";
+
 export default {
   name: "companyAbout",
   data() {
     return {
       tab: 1,
       active: "Tactica",
+      currentDate: "",
+      currentMonths: "",
       companyData: [
         {
           name: "Tactica",
-          description: "lorem ipsum lorem ipsum",
           position: "WordPress Developer & UI/UX Designer",
           time: "6 months",
           from: "01.05.2021",
@@ -96,7 +98,6 @@ export default {
         },
         {
           name: "MeshCOM",
-          description: "lorem ipsum lorem ipsum",
           position: "Frontend Developer",
           time: "12 months",
           from: "01.11.2021",
@@ -105,11 +106,10 @@ export default {
         },
         {
           name: "FinnieConsulting",
-          description: "lorem ipsum lorem ipsum",
           position: "Frontend Developer",
-          time: "6 months",
-          from: "01.11.2021",
-          to: "currently",
+          time: this.currentMonths,
+          from: "03.10.2022",
+          to: null,
           tab: this.activeTabThree,
         },
       ],
@@ -117,22 +117,18 @@ export default {
         {
           img: "img/aboutBackground.svg",
           title: "lorem ipsum 1",
-          description: "this is description1 for company and what i did",
         },
         {
           img: "img/aboutBackground.svg",
           title: "lorem ipsum 2",
-          description: "this is description2 for company and what i did",
         },
         {
           img: "img/aboutBackground.svg",
           title: "lorem ipsum 3",
-          description: "this is description 3 for company and what i did",
         },
       ],
     };
   },
-
   methods: {
     activeTabOne() {
       this.tab = 1;
@@ -146,6 +142,23 @@ export default {
       this.tab = 3;
       this.active = "FinnieConsulting";
     },
+    getCurrentDate() {
+      this.currentDate = moment().format("DD.MM.YYYY");
+      this.companyData[2].to = this.currentDate;
+    },
+    calculateMonths() {
+      const from = moment(this.companyData[2].from, "DD.MM.YYYY");
+      const to = this.companyData[2].to
+        ? moment(this.companyData[2].to, "DD.MM.YYYY")
+        : moment();
+      const monthsDiff = to.diff(from, "months");
+      this.companyData[2].time = `${monthsDiff} months`;
+      this.currentMonths = this.companyData[2].time;
+    },
+  },
+  mounted() {
+    this.getCurrentDate();
+    this.calculateMonths();
   },
 };
 </script>

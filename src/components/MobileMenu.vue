@@ -25,10 +25,8 @@
       <li class="py-2 px-4">
         <router-link to="/contact">Contact</router-link>
       </li>
-      <li
-        class="bg-primary-green py-2 px-4 rounded-lg cursor-pointer hover:bg-primary-grey"
-      >
-        Hire Me
+      <li class="py-2 px-4">
+        <router-link to="/faqs">FAQs</router-link>
       </li>
     </ul>
   </div>
