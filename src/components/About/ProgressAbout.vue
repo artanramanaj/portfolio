@@ -3,8 +3,12 @@
     <div class="relative min-h-40">
       <div class="flex" v-for="(el, index) in progressList" :key="index">
         <div
-          class="text-white m-2 rounded p-1"
-          :style="{ width: el.progress + '%', background: el.color }"
+          class="text-white m-2 rounded py-[2px] px-2 fade-in"
+          :style="{
+            width: el.progress + '%',
+            background: el.color,
+            '--progress': el.progress + '%',
+          }"
         >
           {{ el.name }} {{ el.progress + "%" }}
         </div>
@@ -74,8 +78,38 @@ export default {
           progress: 90,
           color: "#00CE79",
         },
+        {
+          name: "Php",
+          progress: 90,
+          color: "#00CE79",
+        },
+        {
+          name: "MySQL",
+          progress: 90,
+          color: "#00CE79",
+        },
       ],
     };
   },
 };
 </script>
+
+<style scope>
+.fade-in {
+  animation: fadeInAnimation 2s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    width: 0%;
+    visibility: hidden;
+  }
+  20% {
+    width: 20%;
+    visibility: hidden;
+  }
+  100% {
+    width: var(--progress, 100%);
+  }
+}
+</style>
