@@ -6,11 +6,8 @@
       <h4>AR</h4>
       <p>Crafting exceptional websites to bring your vision to life.</p>
       <div class="flex gap-4">
-        <a href="https://www.instagram.com/artanrramanaj/" target="_blank">
-          <img src="/img/primary-instagram.svg" alt="" class="w-[24px]" />
-        </a>
-        <a href="https://bitbucket.org/ar38263/" target="_blank">
-          <img src="/img/primary-bitbucket.svg" alt="" class="w-[24px]" />
+        <a href="https://github.com/artanramanaj" target="_blank">
+          <img src="/img/github-logo.png" alt="" class="w-[24px]" />
         </a>
 
         <a href="https://www.linkedin.com/in/artan-ramanaj/" target="_blank">
@@ -23,14 +20,12 @@
       <ul class="flex flex-col gap-2 cursor-pointer">
         <router-link to="/">Home</router-link>
         <router-link to="/about">About me</router-link>
-        <router-link to="/portfolio">Portfolio</router-link>
-        <router-link to="/services">Services</router-link>
         <router-link to="/contact">Contact</router-link>
       </ul>
     </div>
 
     <div class="flex flex-col gap-4">
-      <h4>Help Center</h4>
+      <h4>Knowledge Base</h4>
       <ul class="flex flex-col gap-2 cursor-pointer">
         <li>
           <router-link to="/faqs"> FAQ-s </router-link>

@@ -18,8 +18,7 @@ export default {
         {
           title:
             "What frontend technologies do you typically use in your projects?",
-          content:
-            "In my frontend development projects, I typically use Vue.js as my JavaScript framework and Tailwind CSS as my styling library. I find that Vue.js provides a flexible and intuitive framework for building dynamic user interfaces, while Tailwind CSS allows me to quickly and easily create responsive and visually appealing designs. Additionally, I am experienced in using other popular frontend technologies such as React, Angular, and Bootstrap, and I am always exploring new technologies and tools to expand my skill set.",
+         "content": "I primarily work with Vue, React, Nuxt, and Next, but I can also develop using vanilla JavaScript, depending on the client's requirements. For styling, I typically use Tailwind CSS or Bootstrap, with a preference for Tailwind due to its flexibility and efficiency.",
           open: false,
         },
         {

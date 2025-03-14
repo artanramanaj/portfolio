@@ -14,63 +14,6 @@ const router = createRouter({
       component: () => import("../views/AboutViews.vue"),
     },
     {
-      path: "/portfolio",
-      name: "portfolio",
-      component: () => import("../views/PortfolioViews.vue"),
-    },
-    {
-      path: "/portfolio/deingesundheitscoach",
-      name: "deingesundheitscoach",
-      component: () =>
-        import("../components/Portfolio/Projects/Deingesundheitscoach.vue"),
-    },
-    {
-      path: "/portfolio/eventveranstalter",
-      name: "eventveranstalter",
-      component: () =>
-        import("../components/Portfolio/Projects/Eventveranstalter.vue"),
-    },
-    {
-      path: "/portfolio/finnieconsulting",
-      name: "finnieconsulting",
-      component: () =>
-        import("../components/Portfolio/Projects/FinnieConsulting.vue"),
-    },
-    {
-      path: "/portfolio/pgs",
-      name: "pgs",
-      component: () => import("../components/Portfolio/Projects/Pgs.vue"),
-    },
-    {
-      path: "/portfolio/planetverify",
-      name: "planetverify",
-      component: () =>
-        import("../components/Portfolio/Projects/PlanetVerify.vue"),
-    },
-    {
-      path: "/portfolio/projekt2024",
-      name: "projekt2024",
-      component: () =>
-        import("../components/Portfolio/Projects/Projekt2024.vue"),
-    },
-    {
-      path: "/portfolio/bluepet",
-      name: "bluepet",
-      component: () =>
-        import("../components/Portfolio/Projects/bluepet.vue"),
-    },
-    {
-      path: "/portfolio/switch",
-      name: "switch",
-      component: () => import("../components/Portfolio/Projects/Switch.vue"),
-    },
-    {
-      path: "/portfolio/zahnarzt",
-      name: "zahnarzt",
-      component: () => import("../components/Portfolio/Projects/Zahnarzt.vue"),
-    },
-  
-    {
       path: "/contact",
       name: "contact",
       component: () => import("../views/ContactViews.vue"),

@@ -13,10 +13,6 @@
         <router-link to="/about">About Me</router-link>
       </li>
       <li class="py-2 px-4">
-        <router-link to="/portfolio">Portfolio</router-link>
-      </li>
-    
-      <li class="py-2 px-4">
         <router-link to="/contact">Contact</router-link>
       </li>
       <li class="py-2 px-4">

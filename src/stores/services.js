@@ -19,7 +19,8 @@ export const servicesStore = defineStore("allServicesStore", {
       {
         img: "/img/wordpresslogo.png",
         name: "WordPress/WooCommerce",
-       
+        description:
+        "Experience in building and customizing websites using WordPress, WooCommerce, and Elementor page builder. Creating responsive, fast, and SEO-friendly websites, from business sites to eCommerce stores.",
       }
     ],
     projects: [

@@ -3,14 +3,14 @@
     <div class="relative min-h-40">
       <div class="flex" v-for="(el, index) in progressList" :key="index">
         <div
-          class="text-white m-2 rounded py-[2px] px-2 fade-in"
+          class=" m-2 rounded py-[4px] px-2 fade-in text-black font-semibold"
           :style="{
             width: el.progress + '%',
             background: el.color,
             '--progress': el.progress + '%',
           }"
         >
-          {{ el.name }} {{ el.progress + "%" }}
+          {{ el.name }} 
         </div>
       </div>
     </div>
@@ -25,67 +25,82 @@ export default {
       progressList: [
         {
           name: "HTML",
-          progress: 95,
+          progress: 100,
           color: "#00CE79",
         },
         {
           name: "CSS",
-          progress: 95,
+          progress: 100,
           color: "#00CE79",
         },
         {
           name: "Tailwind",
-          progress: 95,
+          progress: 100,
           color: "#00CE79",
         },
         {
           name: "Javascript",
-          progress: 90,
+          progress: 100,
           color: "#00CE79",
         },
         {
           name: "Vue",
-          progress: 95,
+          progress: 100,
           color: "#00CE79",
         },
         {
           name: "React",
-          progress: 90,
+          progress: 100,
+          color: "#00CE79",
+        },
+        {
+          name: "Nuxt.js",
+          progress: 100,
+          color: "#00CE79",
+        },
+        {
+          name: "Next.js",
+          progress: 100,
           color: "#00CE79",
         },
         {
           name: "WordPress",
-          progress: 95,
-          color: "#00CE79",
-        },
-        {
-          name: "Elementor",
-          progress: 95,
+          progress: 100,
           color: "#00CE79",
         },
         {
           name: "WooCommerce",
-          progress: 90,
+          progress: 100,
           color: "#00CE79",
         },
         {
-          name: "Shopify",
-          progress: 80,
+          name: "Node.js",
+          progress: 100,
           color: "#00CE79",
         },
         {
-          name: "Figma",
-          progress: 90,
+          name: "Express.js",
+          progress: 100,
           color: "#00CE79",
         },
         {
           name: "Php",
-          progress: 90,
+          progress: 100,
+          color: "#00CE79",
+        },
+        {
+          name: "Laravel",
+          progress: 100,
           color: "#00CE79",
         },
         {
           name: "MySQL",
-          progress: 90,
+          progress: 100,
+          color: "#00CE79",
+        },
+        {
+          name: "MongoDB",
+          progress: 100,
           color: "#00CE79",
         },
       ],

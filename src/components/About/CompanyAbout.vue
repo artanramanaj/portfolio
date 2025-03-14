@@ -27,14 +27,14 @@
         <img
           src="/img/companyimg.svg"
           alt="test1"
-          class="absolute top-[20%] left-[60%] lg:left-[20%] w-[250px] h-[250px] lg:w-[350px] lg:h-[350px]"
+          class="absolute top-[20%] left-[60%] md:left-[20%] w-[200px] h-[200px] md:w-[350px] md:h-[350px]"
         />
-        <h1>Tactica</h1>
+        <h1>FinnieConsulting</h1>
         <p>
-          In my previous role as a WordPress developer, I designed and developed
-          user-friendly websites using Elementor as a page builder and Figma as
-          a design tool. I collaborated with other team members to ensure
-          optimal performance and user experience.
+          In my current role as a Frontend developer, I create visually
+          appealing and responsive interfaces that engage users and enhance
+          their overall experience. I stay up-to-date with the latest industry
+          trends to continuously improve the quality of my work.
         </p>
       </div>
 
@@ -56,6 +56,8 @@
         </p>
       </div>
 
+    
+
       <div
         v-if="tab == 3"
         class="flex flex-col justify-center items-start gap-4 w-[100%]"
@@ -63,14 +65,14 @@
         <img
           src="/img/companyimg.svg"
           alt="test1"
-          class="absolute top-[20%] left-[60%] md:left-[20%] w-[200px] h-[200px] md:w-[350px] md:h-[350px]"
+          class="absolute top-[20%] left-[60%] lg:left-[20%] w-[250px] h-[250px] lg:w-[350px] lg:h-[350px]"
         />
-        <h1>FinnieConsulting</h1>
+        <h1>Tactica</h1>
         <p>
-          In my current role as a Frontend developer, I create visually
-          appealing and responsive interfaces that engage users and enhance
-          their overall experience. I stay up-to-date with the latest industry
-          trends to continuously improve the quality of my work.
+          In my previous role as a WordPress developer, I designed and developed
+          user-friendly websites using Elementor as a page builder and Figma as
+          a design tool. I collaborated with other team members to ensure
+          optimal performance and user experience.
         </p>
       </div>
     </div>
@@ -84,16 +86,16 @@ export default {
   data() {
     return {
       tab: 1,
-      active: "Tactica",
+      active: "FinnieConsulting",
       currentDate: "",
       currentMonths: "",
       companyData: [
-        {
-          name: "Tactica",
-          position: "WordPress Developer & UI/UX Designer",
-          time: "6 months",
-          from: "01.05.2021",
-          to: "30.10.2021",
+      {
+          name: "FinnieConsulting",
+          position: "Frontend Developer",
+          time: "2 years and 5 months",
+          from: "03.10.2022",
+          to: "01.02.2025",
           tab: this.activeTabOne,
         },
         {
@@ -104,12 +106,13 @@ export default {
           to: "01.10.2022",
           tab: this.activeTabTwo,
         },
+    
         {
-          name: "FinnieConsulting",
-          position: "Frontend Developer",
-          time: this.currentMonths,
-          from: "03.10.2022",
-          to: null,
+          name: "Tactica",
+          position: "WordPress Developer & UI/UX Designer",
+          time: "6 months",
+          from: "01.05.2021",
+          to: "30.10.2021",
           tab: this.activeTabThree,
         },
       ],
@@ -132,33 +135,35 @@ export default {
   methods: {
     activeTabOne() {
       this.tab = 1;
-      this.active = "Tactica";
+      this.active = "FinnieConsulting";
     },
+ 
     activeTabTwo() {
       this.tab = 2;
       this.active = "MeshCOM";
     },
     activeTabThree() {
-      this.tab = 3;
-      this.active = "FinnieConsulting";
+      this.tab =3;
+      this.active = "Tactica";
     },
+  
     getCurrentDate() {
-      this.currentDate = moment().format("DD.MM.YYYY");
-      this.companyData[2].to = this.currentDate;
+      // this.currentDate = moment().format("DD.MM.YYYY");
+      // this.companyData[2].to = this.currentDate;
     },
     calculateMonths() {
-      const from = moment(this.companyData[2].from, "DD.MM.YYYY");
-      const to = this.companyData[2].to
-        ? moment(this.companyData[2].to, "DD.MM.YYYY")
-        : moment();
-      const monthsDiff = to.diff(from, "months");
-      this.companyData[2].time = `${monthsDiff} months`;
-      this.currentMonths = this.companyData[2].time;
+      // const from = moment(this.companyData[2].from, "DD.MM.YYYY");
+      // const to = this.companyData[2].to
+      //   ? moment(this.companyData[2].to, "DD.MM.YYYY")
+      //   : moment();
+      // const monthsDiff = to.diff(from, "months");
+      // this.companyData[2].time = `${monthsDiff} months`;
+      // this.currentMonths = this.companyData[2].time;
     },
   },
   mounted() {
-    this.getCurrentDate();
-    this.calculateMonths();
+    // this.getCurrentDate();
+    // this.calculateMonths();
   },
 };
 </script>

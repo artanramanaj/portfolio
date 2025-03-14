@@ -8,9 +8,9 @@
       <h1>
         Hi I’m Artan Ramanaj I am a
         <span class="text-[40px] text-primary-green font-semibold"
-          >Frontend Developer</span
+          >Frontend/Fullstack </span
         >
-        and a UI/UX Designer.
+        Developer
       </h1>
       <p class="text-center">
         I'm a frontend developer with a passion for creating beautiful and
