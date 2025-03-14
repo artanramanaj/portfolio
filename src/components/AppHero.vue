@@ -7,11 +7,11 @@
     >
       <h1>
         Hi I’m Artan Ramanaj I am a
-        <h1 class="inline text-secondary-green">Frontend developer</h1>
-        and a UI/UX Designer.
+        <h1 class="inline text-secondary-green">Frontend/Fullstack developer</h1>
+      
       </h1>
       <p>
-        With expertise in front-end and UI/UX technologies, I design and develop
+        With expertise in front-end and backend technologies, I design and develop
         custom websites that enhance your online presence and drive business
         growth. Let's build something great together!
       </p>
@@ -20,7 +20,7 @@
       </router-link>
     </div>
     <img
-      src="/img/newmainbackground.svg"
+      src="/img/hero-bg.svg"
       alt="background"
       class="md:w-1/2 md:h-1/2 w-full full fade2"
     />

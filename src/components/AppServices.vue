@@ -2,7 +2,7 @@
   <div
     class="container flex flex-col justify-center items-center gap-4 text-white px-2 py-20"
   >
-    <p class="text-primary-green">Services</p>
+    <p class="text-primary-green">skills</p>
     <h1>Skillset</h1>
     <div
       class="w-full flex flex-col md:flex-row flex-wrap gap-4 justify-center md:gap-8"
@@ -17,13 +17,9 @@
         <p class="text-center">{{ el.description }}</p>
       </div>
     </div>
-    <button class="primary-btn" @click="loadSkills" v-if="btnValue">
-      Load More
-    </button>
-    <button class="primary-btn" @click="showLess" v-if="!btnValue">
-      Show Less
-    </button>
-    <div></div>
+  
+  
+
   </div>
 </template>
 
@@ -50,13 +46,7 @@ export default {
       this.skillNumber = this.skills.allServices.length;
       this.btnValue = false;
     },
-    showLess() {
-      this.skillNumber = 3;
 
-      this.showSkills = this.skills.allServices.slice(0, this.skillNumber);
-      this.skillNumber = this.skills.allServices.length;
-      this.btnValue = true;
-    },
   },
 };
 </script>

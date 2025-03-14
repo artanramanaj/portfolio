@@ -15,9 +15,7 @@
       <li class="py-2 px-4">
         <router-link to="/portfolio">Portfolio</router-link>
       </li>
-      <li class="py-2 px-4">
-        <router-link to="/services">Services </router-link>
-      </li>
+    
       <li class="py-2 px-4">
         <router-link to="/contact">Contact</router-link>
       </li>

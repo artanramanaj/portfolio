@@ -69,11 +69,7 @@ const router = createRouter({
       name: "zahnarzt",
       component: () => import("../components/Portfolio/Projects/Zahnarzt.vue"),
     },
-    {
-      path: "/services",
-      name: "services",
-      component: () => import("../views/ServicesViews.vue"),
-    },
+  
     {
       path: "/contact",
       name: "contact",

@@ -3,7 +3,7 @@
     class="container flex flex-col justify-center items-center gap-4 text-white px-2 py-20"
   >
     <p class="text-primary-green">Portfolio</p>
-    <h1 class="text-white">Projects</h1>
+    <h1 class="text-white">Prime Projects</h1>
     <div
       class="w-full flex flex-col md:flex-row flex-wrap gap-4 justify-center"
     >
@@ -13,12 +13,11 @@
         :key="index"
       >
         <div class="flex flex-col items-center justify-center w-full p-4 gap-2">
-          <img :src="el.img" alt="logo" class="w-[120px] h-[50px]" />
+          <img :src="el.img" alt="logo" class="w-[150px]" />
           <h3>{{ el.name }}</h3>
-          <p class="text-center">{{ el.description }}</p>
-          <router-link to="/">
-            <button class="bg-transparent">More details</button>
-          </router-link>
+      
+            <a target="_blank" :href="el.url" class="text-primary-green bg-transparent">View Project</a>
+    
         </div>
       </div>
     </div>
