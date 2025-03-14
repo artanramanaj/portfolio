@@ -48,7 +48,7 @@ export default {
   data() {
     return {
       schema: {
-        name: "required|min:5|max:20",
+        name: "required|min:3|max:20",
         email: "required|email",
         message: "required|min:10|max:100",
       },
