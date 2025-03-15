@@ -31,7 +31,7 @@
         />
         <h1>FinnieConsulting</h1>
         <p>
-          In my current role as a Frontend developer, I create visually
+          In my previous role as a Frontend developer, I create visually
           appealing and responsive interfaces that engage users and enhance
           their overall experience. I stay up-to-date with the latest industry
           trends to continuously improve the quality of my work.
